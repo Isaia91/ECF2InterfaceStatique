@@ -1,0 +1,411 @@
+/*definie la larger de la navbar et la fixe lors du scroll*/
+nav{
+    position: fixed;
+    width: 100%;
+}
+
+/*ajuste la position du logo dans la navbar*/
+.brand{
+    margin-top: 8%;
+}
+
+/* pour la couleur des texte*/
+.txtwhite{color: #f4f7f8;}
+
+
+/*police des text*/
+.roboto{
+    font-size: larger;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Positionnement les lignes des textes*/
+.margin_sections{
+    margin-right: 10%;
+}
+
+/*Button "learnmore"*/
+        .button {
+            background-color: #d9534f;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 24px;
+            font-weight: bolder;
+            border-radius: 8px;
+            transition: all 0.5s;
+            cursor: pointer;
+        }
+
+        .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        .button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+        .button:hover span {
+            padding-right: 25px;
+        }
+
+        .button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+
+/* /button */
+
+/* margin top dans le jumbotron*/
+.margintop{
+    margin-top: 7%;
+}
+
+/*taille police du titre*/
+.headertitlesize{
+    font-size: 52px;
+    margin-bottom: 5%;
+}
+
+/*Pour le nombre de lignes*/
+.morelines{
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+/*margin left pour séparer les items de la navbar*/
+.navmargin{
+    margin-left: 20px;
+}
+
+/*taille police*/
+h4{
+    font-size: 17px;
+}
+
+/*background color de la div get-involved*/
+#get-involved{
+    background-color:#f5f5f5;
+}
+
+
+/*Modifier les margin bot et top textes dans les section who et get-involded*/
+.margin_height_sections{
+    margin-top:20px ;
+    margin-bottom:20px ;
+}
+
+/*met en couleur et majuscules les textes*/
+.section_font_size{
+    color: #e74c3c;
+    text-transform: uppercase;
+}
+
+/*textes sous les items*/
+#sec1 > p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 20px;
+    margin-left: 5%;
+    margin-right: 6%;
+}
+
+/* pour sousligner les titres des sections*/
+.section_font_decoration{
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 20px;
+}
+
+/*margin bottom des icones*/
+.icons_margin{
+    margin-bottom: 3%;
+}
+
+/*Mise en forme des buttons pour une section*/
+.sections_button{
+    background-color: white;
+    color: #e74c3c;
+    border: 2px solid #e7e7e7;
+    font-size: smaller;
+    margin-bottom: 5%;
+}
+
+/*Met le texte en rouge <span>*/
+.txt_red{
+    color:#e74c3c;
+}
+
+/*ajustement des textes items*/
+.items_inline{
+    font-size: 20px;
+    padding: 3%;
+}
+
+/*couleur et hauteur footer*/
+footer{
+    background-color:#f74c3c ;
+    height: 200px;
+}
+
+/*positionner le logo dans le footer*/
+.last-item{
+    margin-top: 10%;
+}
+
+/*mettre au premier plan*/
+.overall{
+    z-index: 1;
+}
+
+/*positionnement du button*/
+.Btn_Go_Up{
+    position: fixed;
+    margin-top: 43%;
+    margin-left: 94%;
+    z-index: 1;
+}
+.burger{
+    display: none;
+}
+#back-to-top-sm-screen{
+    display: none;
+}
+
+
+
+/*Responsive*/
+
+    @media screen and (max-width: 1200px){
+
+        /*largeur du jumbotron*/
+        #home{
+            width:100%;
+        }
+
+        /*ajuster le nombre de lignes*/
+        .morelines{
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+
+        /*margin left dan les sections*/
+        .margin_sections{
+        margin-left: 0%;
+        }
+
+        /*ajuster le texte de la section who*/
+        .margin_sections > p{
+            margin-left:0% ;
+            margin-right: 0%;
+            font-size: 18px;
+            letter-spacing: -1px;
+        }
+
+        /*positionnement du button*/
+        .Btn_Go_Up{
+            position: fixed;
+            margin-top: 42%;
+            margin-left: 94%;
+            z-index: 1;
+        }
+        
+        #sec1 > p {
+            margin-top: 0;
+            margin-bottom: 1rem;
+            font-size: 19px;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+
+        .items_inline > p{
+            font-size: 18px;
+            margin-left: 2%;
+            margin-right: 2%;
+        }
+        
+        
+    }
+
+    @media screen and (max-width: 992px){
+        /*ajuster les lignes avec les margin a l'interieur de "morelines"*/
+        .adjustlines{
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+        /*permet d'afficher en colonne les 3 items de la section */
+        .items_inline{
+            width: 100%;
+        }
+
+        /*margin bottom pour séparer les icons de leurs textes*/
+        .icons_margin{
+            margin-bottom: 3%;
+        }
+
+        /*ajuster les lignes*/
+        .morelines{
+            margin-left: 7%;
+            margin-right: 7%;
+        }
+
+        /*Pour avoir 3 lignes*/
+        .roboto> h1{
+            font-size: 48px;
+            margin-bottom: 5%;
+            margin-left: 11%;
+            margin-right: 11%;
+            letter-spacing: -1px;
+        }
+        
+        /* Pour avoir 4 lignes*/ 
+        .roboto>h4{
+            margin-bottom: 5%;
+            margin-left: 8%;
+            margin-right: 8%;
+            font-size: 20px;
+        }
+        /* positionnement du logo en bas de page*/
+        .last-item{
+        margin-top: 10%;
+        }
+
+        /*Positionnement les lignes des textes*/
+        .margin_sections{
+            margin-left:0%;
+            margin-right:0%;
+        }
+
+        /*positionnement du button*/
+        .Btn_Go_Up{
+            position: fixed;
+            margin-top: 52%;
+            margin-left: 94%;
+            z-index: 1;
+        }
+
+        #sec1 >p{
+            margin-left: 6%;
+            margin-right: 6%;
+        }
+
+        
+
+    }
+
+    @media screen and (max-width: 768px){
+        /*cacher la navbar par défault*/
+        .normalnav{
+            display: none;
+        }
+
+        /*couleur de la navbar, centrer les items, 0 transparence, et la mettre au premier plan*/
+        .nav_for_sm_screen{
+            background-color: black;
+            justify-content:center;
+            opacity: 1;
+            z-index: 1;
+            
+            
+        }
+        /*cacher le button des default screens*/
+        #back-to-top-sm-screen{
+            display: block;
+        }
+        
+        h1{
+            font-size: 30px;
+            margin-bottom: 5%;
+            margin-left: 20%;
+            margin-right: 20%;
+            letter-spacing: 0px;
+            }  
+        
+        h4{
+            margin-bottom: 5%;
+            margin-left: 0%;
+            margin-right: 0%;
+            font-size: 15px;
+        }
+        
+
+        /*positionnement du logo dans navbar*/
+        .logo{
+            margin-bottom: 3px;
+            margin-left: 1%;
+        }
+        
+        /*positionnement du burger*/
+        .burger{
+            margin-left: 90%;
+            top: -1px;
+            position: absolute;
+            display: block;
+        }
+        /*ajustement des lignes*/
+        .morelines{
+            margin-right: 3%;
+            margin-left: 3%;
+        }
+        /*margin titre et navbar*/
+        .margintop{
+            margin-top: 0%;
+        }
+        /*jumbotron titre*/
+        .roboto> h1{
+            font-size: 38px;
+            margin-bottom: 5%;
+            margin-left: 15%;
+            margin-right: 15%;
+            letter-spacing: -1px
+        }
+        /*jumbotron texte*/
+        .roboto>h4{
+            margin-bottom: 5%;
+            margin-left: 2%;
+            margin-right: 2%;
+            font-size: 15px;
+            
+        }
+        #sec1 > p{
+            font-size: 16px;
+            margin-left: 0%;
+            margin-right: 0%;
+        }
+
+        /*position du logo dans le footer*/
+        .last-item{
+            margin-left: 0%;
+        }
+
+        /*positionnement du button*/
+        .Btn_Go_Up_sml{
+            position: fixed;
+            margin-top: 60%;
+            margin-left: 90%;
+            z-index: 1;
+        }
+
+        .margin_height_sections{
+            margin-top:5%;
+        }
+        
+        /*ajouter un margin top avec get involved*/
+        .extramargin{
+            margin-top: 8%;
+        }
+        
+
+    }

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+      <meta name="description" content="Reproduire une page statique, exercice pixel perfect">
+      <meta name="author" content="Isaïa Maperi">
+
+      <title>One Million Lines</title>
+            
+            <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Arvo">
+            <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.min.css">
+
+
+
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+            
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"/>
+
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous" />
+
+            <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/>
+
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+            <link rel="stylesheet" href="./css/custom.css">
+
+            <script>
+              function fonce(){
+                  document.getElementById("home").scrollIntoView();
+              }
+          </script>
+
+    </head>
+
+
+    <body class="fs-3">
+
+      <!--Navbar-->
+
+      <!--Default Navbar-->
+      <div class="normalnav">
+          <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top overall">
+              <a class="navbar-brand" href="#home">
+                  <img src="./images/top-logo.png" alt="Logo One Million Lines" class="brand">
+              </a>
+              <ul class="navbar-nav ml-auto ">
+                  <li class="nav-item ">
+                      <a class="nav-link" href="#who">Who we are</a>
+                  </li>
+                  <li class="nav-item navmargin">
+                      <a class="nav-link" href="#get-involved">Get-involved</a>
+                  </li>
+              </ul>
+          </nav>
+
+          <!--Button to go up for default screen-->
+          <div id="back-to-top">
+              <button type="button" onclick="fonce()">
+                  <span  onclick="lance()" class="Btn_Go_Up fa-stack fa-1x icons_margin" >
+                      <i class="fa-solid fa fa-circle fa-stack-2x"></i>
+                      <i class="fa-solid fa fa-angle-up fa-inverse fa-stack-1x"></i>
+                  </span>
+              </button>
+          </div>
+      </div>
+      
+      <!--For small screens-->
+      <div class="nav_for_sm_screen">
+              <nav class="lil_nav nav_for_sm_screen">
+                  <a>
+                      <img src="./images/top-logo.png" alt="Logo One Million Lines" class="logo">
+                  </a>
+                  <div class="container-fluid burger">
+                      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                        data-mdb-target="#navbarToggleExternalContent4"
+                        aria-controls="navbarToggleExternalContent4" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                      </button>
+                    </div>
+              </nav>
+              <div class="collapse" id="navbarToggleExternalContent4">
+                  <div class="bg-light shadow-3 p-4">
+                    <button class="btn btn-link btn-block border-bottom m-0">Link 1</button>
+                    <button class="btn btn-link btn-block border-bottom m-0">Link 2</button>
+                    <button class="btn btn-link btn-block m-0">Link 3</button>
+                  </div>
+                </div>
+                <!--Button to go up for small screens-->
+                <div id="back-to-top-sm-screen">
+                  <button type="button" onclick="fonce()">
+                      <span  onclick="lance()" class="Btn_Go_Up_sml fa-stack fa-1x icons_margin" >
+                          <i class="fa-solid fa fa-circle fa-stack-2x"></i>
+                          <i class="fa-solid fa fa-angle-up fa-inverse fa-stack-1x"></i>
+                      </span>
+                  </button>
+              </div>
+      </div>
+
+
+    <!-- Jumbotron -->
+    <div id="home">
+      <div class="row ">
+          <div class=" text-center bg-image rounded-3" style="background-image: url('./images/hero-image.jpg');height: 100%;">
+              <div class="morelines">
+                  <div class="d-flex justify-content-center align-items-center">
+                      <div class="roboto margintop margin-sides">
+                          <h1 class="mt-3 headertitlesize txtwhite ">Our goal is to inspire Tallahassee to write 1,000,000 lines of code_</h1>
+                          <h4 class="mt-3 txtwhite adjustlines">All over the country people are taking the <strong> HOUR OF CODE </strong> challenge issued by <strong>CODE.org</strong>.Millions of lines of code are being written.In the capital of Florida,Tallahasse, the community is taking the challenge and our goal is to write 1,000,000 lines of codes_
+                          </h4>
+                          <button class="button" style="vertical-align:middle"><span>Learn More </span></button>
+                          <img src="./images/code.png" alt="Cube Code" style="width:90px; height:auto;margin-bottom:5%;" class="d-block mx-auto mt-5">
+                      </div>
+                  </div>
+              </div>
+          </div>    
+      </div>
+    </div>
+    <!--/Jumbotron-->
+
+
+    <!--Who Section-->
+    <div id="who">
+      <div class="container">
+          <div class="row">
+              <img src="./images/academy-brand-med.png" alt="Academy brand logo" style="width:200px; height:auto; margin-top:5%;" class="d-block mx-auto">
+
+        
+              <h3 class="text-center margin_height_sections roboto section_font_size section_font_decoration">who we are</h3>
+              
+              <div class="margin_sections margin_height_sections" id="sec1">
+                  <p class="text-center">We are <span class="txt_red">MASSIVE ACADEMY</span>. We aim to improve education through both method - effective project - based learning - and material -by teaching skills that are applicable to improving your life today.</p>
+              </div>
+          </div>
+      </div>
+    </div>
+    <!--/Who-->
+
+    <!--Get Section-->
+    <div id="get-involved">
+      <div class="container">
+          <div class="row">
+              <h3 class="text-center margin_height_sections roboto section_font_size section_font_decoration">Get Involved</h3>
+              
+              <div class="col-md-4 text-center margin_height_sections items_inline extramargin">
+                  <span class="fa-stack fa-2x icons_margin">
+                      <i class="fa-solid fa fa-circle fa-stack-2x"></i>
+                      <i class="fa-solid fa fa-user fa-inverse fa-stack-1x"></i>
+                  </span>
+                  <h3 class="section_font_size">Students</h3>
+                  <p >Want to learn how to code? Want to help us to get 1,000,000 lines? Click the button below and we'll let you know how to get Involved</p>
+                  <button class="sections_button" >Start Learning"</button>
+              </div>
+              <div class="col-md-4 text-center margin_height_sections items_inline">
+                  <span class="fa-stack fa-2x icons_margin">
+                      <i class="fa-solid fa fa-circle fa-stack-2x"></i>
+                      <i class="fa-solid fa fa-pencil fa-inverse fa-stack-1x"></i>
+                  </span>
+                  <h3 class="section_font_size">Educators</h3>
+                  <p>Want to bring this initiative to your school or institution? Awesome! Click the button below and we'll make it happen.</p>
+                  <button class="sections_button">Join The Initiative"</button>
+              </div>
+              <div class="col-md-4 text-center margin_height_sections items_inline">
+                  <span class="fa-stack fa-2x icons_margin">
+                      <i class="fa-solid fa fa-circle fa-stack-2x"></i>
+                      <i class="fa-solid fa fa-dollar fa-inverse fa-stack-1x"></i>
+                  </span>        
+                  <h3 class="section_font_size">Sponsor</h3>
+                  <p>We love all the support we get to help host more events, and empower more lives with the knowledge of coding.Click to get involved.</p>
+                  <button class="sections_button">Give Support"</button>
+              </div>
+          </div>
+      </div>
+    </div>
+    <!--Get Involved-->
+
+    <!-- Footer One -->
+    <footer>
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-12">
+                      <img src="./images/one-million-bottom-brand.png" class="last-item" alt="Logo One Million Lines Footer">
+                  </div>
+              </div>
+          </div>
+    </footer>  
+    <!--/Footer-->  
+  </body>
+</html>
